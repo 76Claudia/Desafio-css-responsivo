@@ -156,6 +156,9 @@ label {
     color: var(--color-white);
     padding: 20px 56px 20px 53px;
     border: 0;
+    margin-left: 373px;
+    
+    
    
    
  }
@@ -176,11 +179,12 @@ label {
  }
  
  .games-container-card {
+    display: inline-block;
     width: 300px;
     max-width: 960px;
     border-radius: 8px;
     box-shadow: 0px 4px 20px;
-    margin: 0 auto;
+    margin: 20px;
 
  }
 
@@ -277,6 +281,17 @@ form input {
     align-items: center;
     color: var(--color-gray);
 }
+#ctrl-platform {
+    display: flex;
+    
+}
+
+#ctrl-receive-news {
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
 
 footer {
     width: 100%;
@@ -331,12 +346,21 @@ footer {
     .menu-itens li{
         display: none;
     }
+    .btn-load{
+        display: flex;
+        margin-left: 38px;
+    }
 
     .news-container-card {
         justify-content: center;  
     }
-     
-}
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    }
 
 
 @media(min-width: 576px) {
@@ -363,23 +387,23 @@ footer {
     .news-container-title {
         font-size: 36px;
     }
-    
+  
     .games-container-title{
         font-size: 36px;
     }
     .games-container-card {
-       display: flex;
+       display: inline-block;
        justify-content: center;
-       flex-wrap: wrap;
-       margin: 40px;
+       margin: 10px;   
     }
+    
     .singup-title {
         font-size: 36px;
     }
     .footer {
         width: 100%;
-        min-height: 190px;
-    }
+        height: 190px
     
    
     }
+}
